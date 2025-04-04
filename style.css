@@ -1,52 +1,60 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-body {
+body{
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(255,0,253);
-    background: linear-gradient(0deg, rgba(255,0,253,1) 0%, rgba(253,0,0,1) 100%);
-    overflow: hidden;
+    background: rgb(191,0,203);
+    background: linear-gradient(90deg, rgba(191,0,203,1) 0%, rgba(255,2,236,1) 35%, rgba(254,159,255,1) 100%);      
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container-principal {
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding: 25px;
+}
+
+.titulo {
+    text-align: center;
     color: white;
 }
-img {
-    width: 30px;
-    height: 30px;
-    color: blueviolet;
-    margin-right: 10px;
-    transition: all 0.3s ease-in-out;
-    
+
+#cep {
+    margin-top: 10px;
+   
+}
+h3 {
+    margin-top: 10px;
+
 }
 input {
-    width: 400px;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 10px;
     border: none;
-        
+    outline: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
 }
 
-button {
-   float: right;
-   padding: 6px;
-   border: none;
-   border-radius: 10px;
-   cursor: pointer;
-   background-color: transparent;
-}
-
-h1{
-    margin-top: 20px;
-}
-
-.estilo-paragrafo {
+.btn, .btncoletar {
+    background-color: magenta;
+    color: purple;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }

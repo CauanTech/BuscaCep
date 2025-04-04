@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Lista de Tarefas</title>
+    <title>Busca CEP</title>
 </head>
 <body>
-        <div class="main">
-            <h1>Lista de tarefas</h1>
-            <input type="text" id="input-tarefa" placeholder="Digite uma tarefa...">
-            <button id="btn"><img src="https://www.svgrepo.com/show/528832/add-circle.svg" alt=""></button>
-            <div id="list">
+    <section>
+        <div class="container-principal">
+            <h2 class="titulo">Pesquisa por CEP</h2>
+            <input type="text" id="cep" placeholder="Digite o CEP">
+            <input type="button" value="Buscar" class="btncoletar" onclick="coletarCep()">
+            <input type="button" value="Limpar" class="btn" onclick="apagar()">
+            <h3 id="endereco">Endereço</h3>
+            <h3 id="bairro">Bairro</h3>
+            <h3 id="cidade">Cidade</h3>
+            <h3 id="estado">Estado</h3>
+            <h3 id="regiao">Região</h3>
             
-            </div>
         </div>
-        <script src="main.js"></script>
-</body>
+    </section>
+<script src="main.js"></script>
 </html>
